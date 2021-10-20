@@ -1,0 +1,9 @@
+<div class="container col-6 mx-auto">
+<h1 class="text-center">New Restaurant</h1>
+
+<%= render 'form', restaurant: @restaurant %>
+
+<%= link_to restaurants_path, class: "btn btn-warning" do %>
+  <i class="fas fa-undo-alt"></i>
+<% end %>
+</div>

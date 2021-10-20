@@ -1,0 +1,35 @@
+<div class="container col-6 mx-auto card mt-5">
+  <p id="notice"><%= notice %></p>
+
+  <p>
+    <strong>Name:</strong>
+    <%= @restaurant.name %>
+  </p>
+
+  <p>
+    <strong>Address:</strong>
+    <%= @restaurant.address %>
+  </p>
+
+  <p>
+    <strong>Phone number:</strong>
+    <%= @restaurant.phone_number %>
+  </p>
+
+  <p>
+    <strong>Category:</strong>
+    <%= @restaurant.category %>
+  </p>
+
+</div>
+<div class="container col-3">
+  <%= link_to edit_restaurant_path(@restaurant), class: "btn btn-success" do %>
+    Edit
+  <% end %>
+  <%= link_to new_restaurant_review_path(@restaurant), class: "btn btn-dark" do %>
+    add a review
+  <% end %>
+  <%= link_to restaurants_path, class: "btn btn-warning" do %>
+    Back
+  <% end %>
+</div>

@@ -1,0 +1,13 @@
+<div class="container col-6 mx-auto">
+  <h1 class="text-center">Editing Restaurant</h1>
+
+  <%= render 'form', restaurant: @restaurant %>
+
+  <%= link_to @restaurant, class: "btn btn-primary" do %>
+    <i class="fas fa-eye"></i>
+  <% end %>
+
+  <%= link_to restaurants_path, class: "btn btn-warning" do %>
+    <i class="fas fa-undo-alt"></i>
+  <% end %>
+</div>
